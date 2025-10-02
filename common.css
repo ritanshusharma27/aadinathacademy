@@ -1,0 +1,7 @@
+/* ===== General Body ===== */
+body{margin:0;font-family:'Poppins',sans-serif;background:#F9FAFB;color:#111;}
+
+/* ===== Navbar Hide/Show ===== */
+.floating-navbar{
+  transition: top 0.3s ease, opacity 0.3s ease;
+}

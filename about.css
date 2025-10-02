@@ -1,0 +1,231 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #F9FAFB;
+  color: #111;
+}
+
+/* -------------------- Floating Navbar -------------------- */
+.floating-navbar {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  background: rgba(13, 71, 161, 0.95);
+  border-radius: 30px;
+  padding: 8px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: top 0.3s ease, opacity 0.3s ease;
+  width: 90%;
+  max-width: 1200px;
+}
+.logo-img { height: 50px; width: auto; }
+.navbar-center { position: absolute; left: 50%; top: -6px; transform: translateX(-50%); }
+.shree-text { color: #FFD700; font-weight: 700; font-size: 1rem; }
+.academy-name { color: #fff; font-size: 1.2rem; letter-spacing: 0.5px; }
+.navbar a { color: white !important; font-weight: 500; transition: 0.3s; }
+.navbar a:hover, .navbar a.active { color: #FFB300 !important; }
+
+/* -------------------- Hero Section -------------------- */
+.hero-about {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('../assets/images/hero_about.jpg') center/cover no-repeat;
+  transition: 1s;
+}
+.hero-about .hero-overlay { position: absolute; inset:0; background: rgba(0,0,0,0.4); }
+.hero-about .hero-content { position: relative; z-index:5; color:white; }
+.hero-about h1 { font-family: 'Roboto Slab', serif; font-size:3.5rem; margin-bottom:15px; transition:0.3s; }
+.hero-about h1:hover { color:#FFD700; transform:scale(1.05); }
+.hero-about p { font-size:1.3rem; margin-bottom:25px; }
+
+/* -------------------- Principal & Director Cards -------------------- */
+.principal-card {
+  background: linear-gradient(135deg,#fff,#f3f3f3);
+  border-radius:20px;
+  box-shadow:0 8px 28px rgba(0,0,0,0.12);
+  transition: all 0.4s ease;
+}
+.principal-card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg,#FFB300,#FF8F00);
+  color:white;
+}
+
+/* -------------------- Timeline -------------------- */
+.timeline {
+  position:relative;
+  padding-left:30px;
+  border-left:3px solid #FFB300;
+}
+.timeline-item {
+  margin-bottom:30px;
+  opacity:0;
+  transform: translateX(-50px);
+  transition:0.6s;
+}
+.timeline-year { font-weight:700; margin-bottom:5px; color:#0D47A1; }
+.timeline-content { font-size:1rem; }
+.timeline-item.show { opacity:1; transform: translateX(0); }
+
+/* -------------------- Achievements -------------------- */
+.achievement-card {
+  background:#fff;
+  text-align:center;
+  padding:20px;
+  border-radius:20px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+}
+.achievement-card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg,#FFB300,#FF8F00);
+  color:white;
+}
+
+/* -------------------- Council / Facilities Slider -------------------- */
+.council-slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding:20px 0;
+}
+.council-track {
+  display:flex;
+  transition: transform 0.8s ease-in-out;
+  gap:30px;
+}
+.council-card {
+  flex:0 0 48%;
+  background: linear-gradient(135deg,#fff,#f3f3f3);
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 8px 28px rgba(0,0,0,0.12);
+  padding:20px;
+  opacity:0;
+  transform:scale(0.9);
+  transition: all 0.8s ease;
+  cursor:pointer;
+}
+.council-card.show { opacity:1; transform: scale(1); }
+.council-card img { width:150px; height:150px; object-fit:cover; border-radius:50%; margin-bottom:15px; }
+.council-card h4 { font-size:1.1rem; font-weight:600; margin-bottom:5px; }
+.council-card p.role, .council-card p.desc { font-size:0.9rem; color:#0D47A1; font-weight:500; }
+
+/* Hover Effect for Cards */
+.council-card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg,#FFB300,#FF8F00);
+  color: white;
+}
+.council-card:hover h4,
+.council-card:hover p.role,
+.council-card:hover p.desc { color:white; }
+
+/* -------------------- Slider Arrows -------------------- */
+.council-slider .arrow {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:50px;
+  height:50px;
+  background: linear-gradient(135deg,#0D47A1,#FFD700);
+  border:none;
+  border-radius:50% 10% 50% 10%;
+  font-size:2rem;
+  color:#fff;
+  cursor:pointer;
+  z-index:10;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.council-slider .arrow:hover {
+  transform: translateY(-50%) scale(1.2) rotate(10deg);
+  background: linear-gradient(135deg,#FFD700,#0D47A1);
+}
+.arrow.prev { left:-25px; }
+.arrow.next { right:-25px; }
+
+/* -------------------- Virtual Tour Video -------------------- */
+.virtual-tour video {
+  width:100%;
+  border-radius:20px;
+  box-shadow:0 12px 40px rgba(0,0,0,0.25);
+  transition:0.3s;
+  height:600px;
+}
+.virtual-tour video:hover { transform: scale(1.02); }
+
+/* -------------------- Section Titles -------------------- */
+.section-title {
+  text-align:center;
+  margin-bottom:40px;
+  font-size:2rem;
+  font-weight:700;
+  color:#0D47A1;
+  position:relative;
+}
+.section-title::after {
+  content:"";
+  display:block;
+  width:60px;
+  height:3px;
+  background:#FFB300;
+  margin:10px auto 0;
+  border-radius:2px;
+}
+
+/* -------------------- Floating Footer -------------------- */
+.floating-footer {
+  position: fixed;
+  bottom: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(13,71,161,0.95);
+  border-radius:30px;
+  padding:12px 25px;
+  width:80%;
+  max-width:1000px;
+  text-align:center;
+  z-index:999;
+  opacity:0;
+  transition: all 0.8s ease;
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+.floating-footer.show {
+  bottom:15px;
+  opacity:1;
+  transition: all 0.8s ease;
+}
+.footer-links a {
+  color:white;
+  margin:0 10px;
+  font-size:1.2rem;
+  transition:0.3s;
+}
+.footer-links a:hover { color:#FFB300; }
+.footer-text { color:white; font-size:0.9rem; }
+
+/* -------------------- Responsive -------------------- */
+@media(max-width:768px){
+  .council-card { flex:0 0 80%; }
+  .hero-about h1 { font-size:2.5rem; }
+  .hero-about p { font-size:1rem; }
+  .floating-navbar { width:95%; padding:6px 15px; }
+  .arrow { width:40px; height:40px; font-size:1.5rem; }
+}
+
+@media(max-width:480px){
+  .council-card { flex:0 0 90%; }
+  .hero-about h1 { font-size:2rem; }
+  .hero-about p { font-size:0.9rem; }
+}

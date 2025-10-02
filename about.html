@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Aadinath Academy</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+
+<!-- Floating Navbar -->
+<nav class="navbar floating-navbar navbar-expand-lg">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+      <span class="academy-name ms-2">Aadinath Academy</span>
+    </a>
+    <div class="navbar-center text-center">
+      <div class="shree-text">श्री गणेशाय नमः</div>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+        <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-about" id="hero-about">
+  <div class="hero-overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>About Us</h1>
+    <p>Shaping future leaders in Ajmer District with values, excellence & innovation</p>
+  </div>
+</section>
+
+<!-- Principal & Director Section -->
+<section class="principal-section container py-5">
+  <div class="row g-4 justify-content-center">
+    <div class="col-md-6" data-aos="fade-right">
+      <div class="card p-3 principal-card text-center">
+        <img src="assets/images/principal.jpg" class="img-fluid rounded-circle mb-3" alt="Principal">
+        <h4>Dr. Sunita Sharma</h4>
+        <p class="role">Principal</p>
+        <p class="message">Welcome to Aadinath Academy. We nurture talent with discipline, values, and innovation.</p>
+      </div>
+    </div>
+    <div class="col-md-6" data-aos="fade-left">
+      <div class="card p-3 principal-card text-center">
+        <img src="assets/images/director.jpg" class="img-fluid rounded-circle mb-3" alt="Director">
+        <h4>Mr. Rajesh Kumar</h4>
+        <p class="role">Director</p>
+        <p class="message">Our mission is to build confident, creative, and responsible leaders of tomorrow.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline Section -->
+<section class="history-section container py-5">
+  <h2 class="section-title" data-aos="fade-up">Our Journey</h2>
+  <div class="timeline">
+    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+      <div class="timeline-year">2015</div>
+      <div class="timeline-content">Founded with classes up to 5th standard in Kekri, Ajmer.</div>
+    </div>
+    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+      <div class="timeline-year">2018</div>
+      <div class="timeline-content">Expanded to 9th standard and introduced new curriculum aligned with RBSE.</div>
+    </div>
+    <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+      <div class="timeline-year">2025</div>
+      <div class="timeline-content">Vision for innovation and student-centric learning.</div>
+    </div>
+  </div>
+</section>
+
+<!-- Achievements Section -->
+<section class="achievements-section container py-5">
+  <h2 class="section-title" data-aos="fade-up">Achievements</h2>
+  <div class="row g-4">
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+      <div class="achievement-card text-center">
+        <i class="fas fa-award fa-2x mb-2"></i>
+        <h5>Excellence Award</h5>
+        <p>Recognized for academic excellence.</p>
+      </div>
+    </div>
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+      <div class="achievement-card text-center">
+        <i class="fas fa-trophy fa-2x mb-2"></i>
+        <h5>Sports Participation</h5>
+        <p>Students participated in district level competitions.</p>
+      </div>
+    </div>
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+      <div class="achievement-card text-center">
+        <i class="fas fa-star fa-2x mb-2"></i>
+        <h5>Innovation Projects</h5>
+        <p>Encouraging creativity and innovation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Students Council Section -->
+<section class="council-section container py-5">
+  <h2 class="section-title" data-aos="fade-up">Students’ Council</h2>
+  <div class="council-slider" id="council-slider">
+    <button class="arrow prev">&#10094;</button>
+    <div class="council-track" id="council-track"></div>
+    <button class="arrow next">&#10095;</button>
+  </div>
+</section>
+
+<!-- Virtual Tour Video -->
+<section class="virtual-tour container py-5" data-aos="fade-up">
+  <h2 class="section-title">Visual Tour of Aadinath Academy</h2>
+  <video src="assets/videos/school-tour.mp4" controls class="img-fluid rounded shadow-lg mt-3" style="height:600px;"></video>
+</section>
+
+<!-- Facilities Section -->
+<section class="facilities-section container py-5">
+  <h2 class="section-title" data-aos="fade-up">Facilities</h2>
+  <div class="council-slider" id="facilities-slider">
+    <button class="arrow prev">&#10094;</button>
+    <div class="council-track" id="facilities-track"></div>
+    <button class="arrow next">&#10095;</button>
+  </div>
+</section>
+
+<!-- Spacer for Footer -->
+<div style="height:120px;"></div>
+
+<!-- Floating Footer -->
+<footer class="floating-footer" id="footer">
+  <div class="footer-links mb-2">
+    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+  <div class="footer-text">
+    © 2025 Aadinath Academy | All Rights Reserved<br>
+    Made with ❤️ by Ritanshu Sharma
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/about.js"></script>
+<script>AOS.init({duration:1000, once:true});</script>
+</body>
+</html>
